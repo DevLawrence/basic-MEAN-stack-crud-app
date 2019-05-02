@@ -11,7 +11,9 @@ export class AppComponent {
   public isAuthenticated: boolean;
 
   constructor() {
-    this.isAuthenticated = false;
+     this.oktaAuth.$authenticationState.subscribe(
+    (isAuthenticated: boolean) => this.isAuthenticated = isAuthenticated
+  );
   }
 
   OktaAuthModule.initAuth({
