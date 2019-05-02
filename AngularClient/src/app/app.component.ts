@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OktaAuthService } from '@okta/okta-angular';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent {
   constructor() {
     this.isAuthenticated = false;
   }
-  
+
   OktaAuthModule.initAuth({
   issuer: 'https://{yourOktaDomain}/oauth2/default',
   redirectUri: 'http://localhost:4200/implicit/callback',
