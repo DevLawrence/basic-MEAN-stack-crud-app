@@ -11,7 +11,8 @@ const routes: Routes = [
   },
   {
     path: 'products',
-    component: ProductsComponent
+    component: ProductsComponent,
+    canActivate: [OktaAuthGuard]
   },
   {
   path: 'implicit/callback',
