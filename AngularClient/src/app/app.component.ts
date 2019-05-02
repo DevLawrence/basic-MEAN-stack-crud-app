@@ -12,6 +12,12 @@ export class AppComponent {
   constructor() {
     this.isAuthenticated = false;
   }
+  
+  OktaAuthModule.initAuth({
+  issuer: 'https://{yourOktaDomain}/oauth2/default',
+  redirectUri: 'http://localhost:4200/implicit/callback',
+  clientId: '{YourClientId}'
+})
 
   login() {
   }
