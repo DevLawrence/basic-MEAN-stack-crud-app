@@ -12,7 +12,12 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent
-  }
+  },
+  {
+  path: 'implicit/callback',
+  component: OktaCallbackComponent
+}
+
 ];
 
 @NgModule({
