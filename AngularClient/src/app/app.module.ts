@@ -40,11 +40,7 @@ import { HomeComponent } from './home/home.component';
     MatDividerModule,
     MatProgressSpinnerModule,
     FormsModule,
-    OktaAuthModule.initAuth({
-  issuer: 'https://{yourOktaDomain}/oauth2/default',
-  redirectUri: 'http://localhost:4200/implicit/callback',
-  clientId: '{YourClientId}'
-})
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
