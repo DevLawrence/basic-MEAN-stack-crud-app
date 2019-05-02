@@ -27,7 +27,8 @@ export class AppComponent implements OnInit{
 })
 
   login() {
-  }
+  this.oktaAuth.loginRedirect();
+}
 
   logout() {
   }
